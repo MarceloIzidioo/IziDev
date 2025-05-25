@@ -15,3 +15,8 @@ dataAtualUtc = DateTime.now();
 System.debug('Data e hora atual (UTC): ' + dataAtualUtc);
 System.debug('Data e hora atual (UTC): ' + DateTime.now());
 
+// Converte a data UTC para o fuso horário do usuário 
+TimeZone tz = UserInfo.getTimeZone();
+String dataAtualLocal = dataAtualUtc.format('yyyy-MM-dd HH:mm:ss', tz.getID());
+System.debug('Data e hora atual no fuso horário do usuário: ' + dataAtualLocal);
+
