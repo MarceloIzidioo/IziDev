@@ -14,3 +14,4 @@ DateTime dataAtualUtc;
 dataAtualUtc = DateTime.now();
 System.debug('Data e hora atual (UTC): ' + dataAtualUtc);
 System.debug('Data e hora atual (UTC): ' + DateTime.now());
+
