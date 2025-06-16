@@ -2,7 +2,7 @@
  * @description       : 
  * @author            : Marcelo Izidio
  * @group             : 
- * @last modified on  : 05-25-2025
+ * @last modified on  : 06-15-2025
  * @last modified by  : Marcelo Izidio
 **/
 public class Usuarios {
@@ -21,6 +21,10 @@ public class Usuarios {
 
     public void exibeUsuario(){
        system.debug('Nome Completo: ' + this.nome + ' ' + this.sobrenome + ', Idade: ' + this.idade); 
+    }
+
+    public static void reserContador(){
+        contador = 0;
     }
 
     public static void qtdUsuarios(){
